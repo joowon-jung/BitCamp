@@ -10,8 +10,12 @@ import oracle.jdbc.driver.*;
 *
 *	1. JDBC Programming  절차 이해
  *   ==>DBMS 접근(login과정)			: Connection 객체로 Object Modeling
- *   ==>SQL Prompt  & SQL전송		: Statement  객체로 Object Modeling
- *   ==>SQL문의 결과						: ResultSet 객체로 Object Modeling
+ *   ==>SQL Prompt  & SQL전송			: Statement  객체로 Object Modeling
+ *   ==>SQL문의 결과					: ResultSet 객체로 Object Modeling
+ *   
+ *   이 코드는 Driver가 바뀔 때 마다 (mysql, oracle 등..) 
+ *   인스턴스 생성 다시하고 코드를 바꿔줘야 하므로,
+ *   JDBC Driver 에 종속적인 Program임! 이해를 위해 풀어 쓴 것! 
 */
 public class ConnectionTest01{
    
