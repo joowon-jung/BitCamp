@@ -26,13 +26,13 @@ public class CreateJDBC {
 			System.out.println("1. driver loading OK");
 		} catch (ClassNotFoundException e) {
 			System.out.println("\n==>Driver Loading시 Exception 발생\n");
-			e.printStackTrace();
+			e.printStackTrace(); // 써주기로 암묵적인 얀속 
 		}
 		
 		try {
 			con = DriverManager.getConnection(url, "scott", "tiger");
 			System.out.println("2. connection 인스턴스 생성 완료");
-		} catch (SQLException e) {
+		} catch (SQLException e) { // 네트워크 문제 생길까봐 try - catch 해줘본 것 
 			System.out.println("\n==>JDBC 절차 중 Exceptin 발생 : " + e.getErrorCode());
 			e.printStackTrace();
 		}
@@ -47,8 +47,8 @@ public class CreateJDBC {
 		}
 		
 		// Create Query 만들기
-		String createSql = 
-				"CREATE TABLE firstJDBC" +
+		String createSql =  
+				"CREATE TABLE firstJDBC" +	// DDL 
 					"(no 		NUMBER(3)," +
 					"name 		VARCHAR2(20)," +
 					"email 	VARCHAR2(30)," +
@@ -56,6 +56,7 @@ public class CreateJDBC {
 		
 		try {
 			System.out.println(":: QUERY 전송결과 : " + stmt.executeUpdate(createSql));
+													// insert, update, delete (dml), 예외적으로 ddl에 사용
 			System.out.println("4. QUERY 전송 완료");
 		} catch (SQLException e) {
 			System.out.println("\n==>JDBC 절차 중 Exceptin 발생 : " + e.getErrorCode());

@@ -6,6 +6,14 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.lang.Exception;
 
+/*
+ 	테이블 생성하는 JDBC 실습 1)
+ 	CREATE TABLE member
+		(no 		NUMBER,
+		id 		VARCHAR2(10),
+		pwd 		VARCHAR2(10) )
+	
+ */
 public class Example01 {
 
 	public static void main(String[] args) throws Exception {

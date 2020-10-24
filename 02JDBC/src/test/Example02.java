@@ -4,6 +4,16 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
+/*
+	데이터 입력하는 JDBC 실습 2)
+	
+	:: 인자값 3개 받아서 Table 에 Insert
+	args[0] : member Table 의 no
+	args[1] : member Tabl 의 id
+	args[2] : member Tabl 의 pwd
+	
+	실행 : 1 angel 1004
+*/
 public class Example02 {
 
 	public static void main(String[] args) throws Exception {

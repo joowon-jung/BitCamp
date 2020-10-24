@@ -4,6 +4,15 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
+/*
+데이터 삭제하는 JDBC 실습 3)
+
+:: 인자값 1개 받아서 Table record 삭제 
+args[0] : member Table 의 id
+
+실행 : angel 
+*/
+
 public class Example03 {
 
 	public static void main(String[] args) throws Exception {

@@ -45,7 +45,7 @@ public class ConnectionTest02{
 
 		//2단계 QUERY (SELECT * FROM product) 전송단계 
 		Statement stmt = con.createStatement();
-		ResultSet rs = stmt.executeQuery("SELECT * FROM product"); 
+		ResultSet rs = stmt.executeQuery("SELECT * FROM product");  // executeQuery : select 에 사용 
 
 		//3단계 결과 확인
 

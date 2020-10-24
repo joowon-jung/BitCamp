@@ -5,6 +5,15 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/*
+데이터 검색하는 JDBC 실습 4)
+
+:: 입력된 Record 수와 무관하게 아래와 같이 출력
+
+회원정보 ==> 번호 : 1, id : angel, pwd : 1004 
+...등등 
+*/
+
 public class Example04 {
 
 	public static void main(String[] args) throws Exception {

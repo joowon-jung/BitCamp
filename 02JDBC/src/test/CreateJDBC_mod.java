@@ -11,7 +11,7 @@ import java.lang.Exception;
  * 		2. 각각의 JDBC Programming 절차에서 발생하는 Exception 이해
  * 		3. executeQuery(SQL), executeUpdate(SQL) Method 이해
  */
-public class CreateJDBC_mod {
+public class CreateJDBC_mod { // CreateJDBC 를 다중 catch 문으로 바꾼 것 
 
 	public static void main(String[] args) {
 		 

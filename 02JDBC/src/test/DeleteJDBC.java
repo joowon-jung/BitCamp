@@ -14,7 +14,7 @@ public class DeleteJDBC {
 		
 		Statement stmt = con.createStatement();
 		
-		// DML : DELETE
+		// DML : DELETE // 게시물 삭제시 이용 
 		String sql = "DELETE FROM firstJDBC WHERE no = 3";
 		
 		// executeUpdate() : DELETE 전송
