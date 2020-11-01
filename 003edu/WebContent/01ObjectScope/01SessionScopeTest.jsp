@@ -2,7 +2,7 @@
 
 <%
 	// :: 내장객체 : request,session,out,application 등등
-	// :: Scriptlet, Expression Tag 에서 사용 가능
+	// :: Scriptlet (<% % >), Expression Tag (<%= % >)에서 사용 가능
 
 	// 1. session Object Scope  "count" 추출.
 	Integer count = (Integer)session.getAttribute("count");
